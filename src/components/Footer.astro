@@ -1,0 +1,65 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-anthrazit-800 text-anthrazit-100 border-t border-anthrazit-600">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center font-bold text-white text-lg">
+            W
+          </div>
+          <div>
+            <span class="text-white font-bold text-lg block leading-tight">WKS</span>
+            <span class="text-anthrazit-300 text-xs block leading-tight">Werner-von-Siemens Schule</span>
+          </div>
+        </div>
+        <p class="text-anthrazit-300 text-sm leading-relaxed">
+          Die Werkstattschule verbindet solide Industrietechnik mit innovativer Start-up-Energie. Hier entsteht Zukunft.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Fachbereiche</h3>
+        <ul class="space-y-2" role="list">
+          <li><a href="/metalltechnik" class="text-anthrazit-300 hover:text-orange-400 transition-colors text-sm">Metalltechnik</a></li>
+          <li><a href="/wirtschaft" class="text-anthrazit-300 hover:text-orange-400 transition-colors text-sm">Wirtschaft</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Quicklinks</h3>
+        <ul class="space-y-2" role="list">
+          <li><a href="/anmeldung" class="text-anthrazit-300 hover:text-orange-400 transition-colors text-sm">Anmeldung</a></li>
+          <li><a href="/kontakt" class="text-anthrazit-300 hover:text-orange-400 transition-colors text-sm">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Kontakt</h3>
+        <address class="not-italic space-y-2 text-sm text-anthrazit-300">
+          <p>Werner-von-Siemens Schule</p>
+          <p>Musterstraße 42</p>
+          <p>12345 Musterstadt</p>
+          <p class="pt-2">
+            <a href="tel:+4912345678" class="hover:text-orange-400 transition-colors">Tel: 01234 / 56 78</a>
+          </p>
+          <p>
+            <a href="mailto:info@wks-schule.de" class="hover:text-orange-400 transition-colors">info@wks-schule.de</a>
+          </p>
+        </address>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-anthrazit-600 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-anthrazit-400 text-xs">
+        &copy; {currentYear} WKS &ndash; Werner-von-Siemens Schule / Werkstattschule. Alle Rechte vorbehalten.
+      </p>
+      <div class="flex gap-6 text-xs">
+        <a href="#" class="text-anthrazit-400 hover:text-orange-400 transition-colors">Impressum</a>
+        <a href="#" class="text-anthrazit-400 hover:text-orange-400 transition-colors">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>

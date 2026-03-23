@@ -1,0 +1,71 @@
+---
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+}
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  projects?: Project[];
+}
+
+const {
+  title = 'Unsere Projekte',
+  subtitle = 'Praxisnah und innovativ - unsere Schüler verwirklichen echte Projekte.',
+  projects = [
+    {
+      title: 'Design-Grill',
+      description: 'Ein vollständig von Schülern entworfener und gefertigter Edelstahl-Grill - vom CAD-Entwurf bis zur finalen Schweißnaht.',
+      tags: ['CAD', 'Schweißen', 'Design'],
+    },
+    {
+      title: 'CNC-Werkstück',
+      description: 'Präzisionsfertigung mit modernster CNC-Technologie. Unsere Schüler programmieren und fertigen eigenständig.',
+      tags: ['CNC', 'Programmierung', 'Präzision'],
+    },
+    {
+      title: 'Prototyp-Entwicklung',
+      description: 'Von der Idee zum Prototyp - Schüler durchlaufen den gesamten Produktentwicklungsprozess.',
+      tags: ['Prototyping', 'Innovation', 'Teamarbeit'],
+    },
+  ],
+} = Astro.props;
+---
+
+<section class="py-16 sm:py-24 bg-anthrazit-50" aria-labelledby="projects-heading">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 id="projects-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+        {title}
+      </h2>
+      <p class="text-anthrazit-400 text-lg max-w-2xl mx-auto">
+        {subtitle}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {projects.map((project) => (
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow border border-anthrazit-100">
+          <div class="aspect-video bg-gradient-to-br from-anthrazit-600 to-anthrazit-800 flex items-center justify-center">
+            <svg class="w-16 h-16 text-orange-500/50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-anthrazit-700 mb-2">{project.title}</h3>
+            <p class="text-anthrazit-400 text-sm leading-relaxed mb-4">{project.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-medium rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
