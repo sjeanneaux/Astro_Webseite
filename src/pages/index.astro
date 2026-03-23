@@ -1,28 +1,116 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import StatsSection from '../components/StatsSection.astro';
+import FachbereichCard from '../components/FachbereichCard.astro';
+import ProjectShowcase from '../components/ProjectShowcase.astro';
 ---
 
-<Layout title="Astro + Tailwind">
-  <main class="flex flex-col items-center justify-center min-h-screen p-8">
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">
-      Willkommen bei Astro!
-    </h1>
-    <p class="text-lg text-gray-600 max-w-xl text-center">
-      Dieses Projekt wurde mit <strong>Astro</strong> und <strong>Tailwind CSS</strong> erstellt.
-    </p>
-    <div class="mt-8 flex gap-4">
-      <a
-        href="https://docs.astro.build"
-        class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-      >
-        Astro Docs
-      </a>
-      <a
-        href="https://tailwindcss.com/docs"
-        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
-      >
-        Tailwind Docs
-      </a>
+<Layout title="Startseite">
+  <HeroSection
+    title='Hier entsteht <span class="text-orange-500">Zukunft.</span>'
+    subtitle="Die WKS verbindet solide Industrietechnik mit innovativer Start-up-Energie. Praxisnah, projektorientiert und zukunftssicher."
+    ctaText="Jetzt anmelden"
+    ctaHref="/anmeldung"
+    secondaryCtaText="Fachbereiche entdecken"
+    secondaryCtaHref="#fachbereiche"
+  />
+
+  <StatsSection />
+
+  <section id="fachbereiche" class="py-16 sm:py-24 bg-white" aria-labelledby="fachbereiche-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Unsere Fachbereiche</span>
+        <h2 id="fachbereiche-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+          Praxis statt Theorie
+        </h2>
+        <p class="text-anthrazit-400 text-lg max-w-2xl mx-auto">
+          An der WKS lernen unsere Schuelerinnen und Schueler mit den Haenden und dem Kopf. Unsere Fachbereiche bieten echte Projekte und moderne Ausstattung.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <FachbereichCard
+          title="Metalltechnik"
+          description="Vom CAD-Modell zum fertigen Produkt. In unseren Werkstaetten arbeiten Schueler mit modernster CNC-Technologie und fertigen echte Produkte."
+          href="/metalltechnik"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>'
+          color="orange"
+        />
+        <FachbereichCard
+          title="Wirtschaft"
+          description="Das Gruender-Tagebuch: Unternehmertum und Digitalisierung praktisch erleben. Unsere Schueler gruenden eigene Projekte und lernen fuers Leben."
+          href="/wirtschaft"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>'
+          color="orange"
+        />
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-anthrazit-50" aria-labelledby="warum-wks-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Warum WKS?</span>
+        <h2 id="warum-wks-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+          Was uns auszeichnet
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-anthrazit-100">
+          <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-anthrazit-700 mb-3">Praxisorientiert</h3>
+          <p class="text-anthrazit-400 leading-relaxed">Bei uns stehen echte Projekte im Mittelpunkt. Vom ersten Tag an arbeiten Schueler in professionellen Werkstaetten.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-anthrazit-100">
+          <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-anthrazit-700 mb-3">Modern ausgestattet</h3>
+          <p class="text-anthrazit-400 leading-relaxed">CNC-Maschinen, CAD-Software, 3D-Drucker - unsere Ausstattung entspricht dem aktuellen Industriestandard.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-anthrazit-100">
+          <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-anthrazit-700 mb-3">Individuelle Betreuung</h3>
+          <p class="text-anthrazit-400 leading-relaxed">Kleine Gruppen und engagierte Lehrkraefte sorgen dafuer, dass jeder Schueler individuell gefoerdert wird.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-anthrazit-700" aria-labelledby="cta-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Bereit fuer deine Zukunft?
+      </h2>
+      <p class="text-anthrazit-200 text-lg max-w-2xl mx-auto mb-10">
+        Informiere dich jetzt ueber unsere Ausbildungsmoeglichkeiten und starte deinen Weg an der WKS. Wir freuen uns auf dich!
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/anmeldung" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-500/25 text-lg">
+          Jetzt anmelden
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="/kontakt" class="inline-flex items-center justify-center px-8 py-4 border-2 border-anthrazit-400 text-white font-semibold rounded-xl hover:border-orange-400 hover:text-orange-400 transition-all text-lg">
+          Kontakt aufnehmen
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>

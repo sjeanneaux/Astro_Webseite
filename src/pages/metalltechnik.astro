@@ -1,0 +1,167 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ProjectShowcase from '../components/ProjectShowcase.astro';
+---
+
+<Layout title="Metalltechnik" description="Metalltechnik an der WKS - Vom CAD-Modell zum fertigen Produkt. Moderne Ausbildung mit CNC, CAD und professionellen Werkstaetten.">
+  <HeroSection
+    title='Vom CAD-Modell zum <span class="text-orange-500">fertigen Produkt</span>'
+    subtitle="In unserer Metalltechnik-Abteilung lernen Schueler den gesamten Fertigungsprozess - von der digitalen Konstruktion bis zum realen Werkstueck."
+    ctaText="Jetzt anmelden"
+    ctaHref="/anmeldung"
+    compact={true}
+  />
+
+  <section class="py-16 sm:py-24 bg-white" aria-labelledby="storytelling-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div>
+          <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Unser Ansatz</span>
+          <h2 id="storytelling-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-6">
+            Transparenz ueber die hohe Ausbildungsqualitaet
+          </h2>
+          <p class="text-anthrazit-400 text-lg leading-relaxed mb-6">
+            Bei uns beginnt jedes Projekt am Bildschirm: Mit professioneller CAD-Software entwerfen unsere Schueler ihre Werkstuecke digital. Dabei lernen sie nicht nur die Software, sondern auch die Grundlagen der technischen Zeichnung und Konstruktion.
+          </p>
+          <p class="text-anthrazit-400 text-lg leading-relaxed mb-8">
+            Anschliessend geht es in die Werkstatt. An modernen CNC-Maschinen, Drehbaenken und Schweissplaetzen setzen die Schueler ihre Entwuerfe in die Realitaet um. Das Ergebnis: Echte Produkte, auf die man stolz sein kann.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">CAD/CAM</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">CNC-Fertigung</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Schweissen</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Drehen &amp; Fraesen</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">3D-Druck</span>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="aspect-video bg-gradient-to-br from-anthrazit-600 to-anthrazit-800 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer Werkstattfoto">
+            <div class="text-center">
+              <svg class="w-16 h-16 text-orange-500/50 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span class="text-anthrazit-400 text-sm">Werkstattfoto</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="aspect-square bg-gradient-to-br from-orange-500/20 to-orange-600/10 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer CNC-Maschine">
+              <div class="text-center">
+                <svg class="w-10 h-10 text-orange-500/50 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-anthrazit-400 text-xs">CNC-Maschine</span>
+              </div>
+            </div>
+            <div class="aspect-square bg-gradient-to-br from-anthrazit-500/20 to-anthrazit-600/10 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer CAD-Arbeitsplatz">
+              <div class="text-center">
+                <svg class="w-10 h-10 text-orange-500/50 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="text-anthrazit-400 text-xs">CAD-Arbeitsplatz</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-anthrazit-50" aria-labelledby="ausbildung-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Ausbildungsinhalte</span>
+        <h2 id="ausbildung-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+          Was du bei uns lernst
+        </h2>
+        <p class="text-anthrazit-400 text-lg max-w-2xl mx-auto">
+          Unsere Ausbildung deckt den gesamten modernen Fertigungsprozess ab.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">1</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">Technisches Zeichnen</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">Grundlagen der technischen Zeichnung, Normen und Symbole. Die Basis fuer alle weiteren Schritte.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">2</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">CAD-Konstruktion</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">3D-Modellierung mit professioneller CAD-Software. Vom einfachen Bauteil bis zur komplexen Baugruppe.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">3</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">CNC-Programmierung</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">Programmierung von CNC-Maschinen mit G-Code und CAM-Software fuer praezise Fertigung.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">4</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">Manuelle Fertigung</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">Drehen, Fraesen, Bohren und Feilen - die handwerklichen Grundlagen bleiben unverzichtbar.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">5</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">Schweisstechnik</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">MIG/MAG, WIG und Elektrodenschweissen - verschiedene Verfahren fuer unterschiedliche Anforderungen.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm">
+          <div class="w-10 h-10 bg-orange-500 text-white rounded-lg flex items-center justify-center font-bold text-lg mb-4">6</div>
+          <h3 class="text-lg font-bold text-anthrazit-700 mb-2">Qualitaetskontrolle</h3>
+          <p class="text-anthrazit-400 text-sm leading-relaxed">Messtechnik und Qualitaetssicherung - damit jedes Werkstueck den Anforderungen entspricht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ProjectShowcase
+    title="Projekte aus der Metalltechnik"
+    subtitle="Unsere Schueler fertigen echte Produkte - hier sind einige Highlights."
+    projects={[
+      {
+        title: 'Design-Grill',
+        description: 'Ein vollstaendig von Schuelern entworfener und gefertigter Edelstahl-Grill - vom CAD-Entwurf bis zur finalen Schweissnaht.',
+        tags: ['CAD', 'Schweissen', 'Design'],
+      },
+      {
+        title: 'CNC-Praezisionsbauteil',
+        description: 'Praezisionsfertigung mit modernster CNC-Technologie. Toleranzen im Hundertstel-Millimeter-Bereich.',
+        tags: ['CNC', 'Programmierung', 'Praezision'],
+      },
+      {
+        title: 'Prototyp-Entwicklung',
+        description: 'Von der Idee zum Prototyp - Schueler durchlaufen den gesamten Produktentwicklungsprozess.',
+        tags: ['Prototyping', 'Innovation', 'Teamarbeit'],
+      },
+    ]}
+  />
+
+  <section class="py-16 sm:py-24 bg-anthrazit-700" aria-labelledby="metall-cta-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="metall-cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Interesse an Metalltechnik?
+      </h2>
+      <p class="text-anthrazit-200 text-lg max-w-2xl mx-auto mb-10">
+        Starte deine Ausbildung in einem der spannendsten Bereiche der Industrie. Wir begleiten dich vom ersten Werkstueck bis zum Abschluss.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/anmeldung" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-500/25 text-lg">
+          Jetzt anmelden
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="/kontakt" class="inline-flex items-center justify-center px-8 py-4 border-2 border-anthrazit-400 text-white font-semibold rounded-xl hover:border-orange-400 hover:text-orange-400 transition-all text-lg">
+          Fragen? Kontaktiere uns
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

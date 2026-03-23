@@ -1,0 +1,171 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ProjectShowcase from '../components/ProjectShowcase.astro';
+---
+
+<Layout title="Wirtschaft" description="Wirtschaft an der WKS - Das Gruender-Tagebuch. Unternehmertum und Digitalisierung praktisch erleben.">
+  <HeroSection
+    title='Das <span class="text-orange-500">Gruender-Tagebuch</span>'
+    subtitle="Unternehmertum und Digitalisierung praktisch lehren. In unserem Wirtschaftsbereich gruenden Schueler eigene Projekte und lernen fuers Leben."
+    ctaText="Jetzt anmelden"
+    ctaHref="/anmeldung"
+    compact={true}
+  />
+
+  <section class="py-16 sm:py-24 bg-white" aria-labelledby="wirtschaft-story-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="order-2 lg:order-1 space-y-6">
+          <div class="aspect-video bg-gradient-to-br from-orange-500/20 to-orange-600/10 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer Unterrichtsfoto">
+            <div class="text-center">
+              <svg class="w-16 h-16 text-orange-500/50 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+              <span class="text-anthrazit-400 text-sm">Unterrichtsfoto</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="aspect-square bg-gradient-to-br from-anthrazit-600 to-anthrazit-800 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer Teamarbeit">
+              <div class="text-center">
+                <svg class="w-10 h-10 text-orange-500/50 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-anthrazit-300 text-xs">Teamarbeit</span>
+              </div>
+            </div>
+            <div class="aspect-square bg-gradient-to-br from-anthrazit-500/20 to-anthrazit-600/10 rounded-2xl flex items-center justify-center" role="img" aria-label="Platzhalter fuer Praesentation">
+              <div class="text-center">
+                <svg class="w-10 h-10 text-orange-500/50 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                </svg>
+                <span class="text-anthrazit-400 text-xs">Praesentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-1 lg:order-2">
+          <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Unser Konzept</span>
+          <h2 id="wirtschaft-story-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-6">
+            Unternehmertum erleben statt nur lernen
+          </h2>
+          <p class="text-anthrazit-400 text-lg leading-relaxed mb-6">
+            Das Gruender-Tagebuch ist unser innovativer Ansatz: Schueler entwickeln eigene Geschaeftsideen, erstellen Businessplaene und setzen ihre Projekte praktisch um. Dabei lernen sie alles von Marketing bis Buchhaltung.
+          </p>
+          <p class="text-anthrazit-400 text-lg leading-relaxed mb-8">
+            Digitalisierung ist dabei kein Schlagwort, sondern Alltag. Unsere Schueler arbeiten mit modernen Tools, nutzen Social Media fuer ihre Projekte und lernen den Umgang mit digitalen Geschaeftsmodellen.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Businessplanung</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Marketing</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Buchhaltung</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Digitalisierung</span>
+            <span class="px-4 py-2 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">E-Commerce</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-anthrazit-50" aria-labelledby="digital-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Digitalisierung</span>
+        <h2 id="digital-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+          Digital denken, praktisch handeln
+        </h2>
+        <p class="text-anthrazit-400 text-lg max-w-2xl mx-auto">
+          Unsere Schueler lernen die Werkzeuge der modernen Wirtschaft.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm text-center">
+          <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-anthrazit-700 mb-2">E-Commerce</h3>
+          <p class="text-anthrazit-400 text-sm">Online-Shops aufbauen und betreiben</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm text-center">
+          <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-anthrazit-700 mb-2">Datenanalyse</h3>
+          <p class="text-anthrazit-400 text-sm">Kennzahlen verstehen und nutzen</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm text-center">
+          <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-anthrazit-700 mb-2">Social Media</h3>
+          <p class="text-anthrazit-400 text-sm">Professionelle Kommunikation online</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-anthrazit-100 shadow-sm text-center">
+          <div class="w-14 h-14 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-base font-bold text-anthrazit-700 mb-2">Buchhaltung</h3>
+          <p class="text-anthrazit-400 text-sm">Digitale Finanzverwaltung lernen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <ProjectShowcase
+    title="Projekte aus dem Wirtschaftsbereich"
+    subtitle="Echte Geschaeftsideen, echte Ergebnisse - unsere Schueler zeigen Unternehmergeist."
+    projects={[
+      {
+        title: 'Schueler-Webshop',
+        description: 'Ein funktionierender Online-Shop, konzipiert, gestaltet und betrieben von unseren Schuelern. Von der Produktfotografie bis zum Versand.',
+        tags: ['E-Commerce', 'Marketing', 'Design'],
+      },
+      {
+        title: 'Businessplan-Wettbewerb',
+        description: 'Jaehrlicher Wettbewerb, bei dem Teams eigene Geschaeftsideen entwickeln und vor einer Jury praesentieren.',
+        tags: ['Businessplan', 'Praesentation', 'Teamarbeit'],
+      },
+      {
+        title: 'Social Media Kampagne',
+        description: 'Schueler entwickeln und realisieren eine komplette Social-Media-Strategie fuer ein lokales Unternehmen.',
+        tags: ['Social Media', 'Strategie', 'Kreativitaet'],
+      },
+    ]}
+  />
+
+  <section class="py-16 sm:py-24 bg-anthrazit-700" aria-labelledby="wirtschaft-cta-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="wirtschaft-cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Werde zum Unternehmer von morgen
+      </h2>
+      <p class="text-anthrazit-200 text-lg max-w-2xl mx-auto mb-10">
+        Starte deine wirtschaftliche Ausbildung an der WKS und entwickle die Skills, die in der modernen Arbeitswelt zaehlen.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/anmeldung" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-500/25 text-lg">
+          Jetzt anmelden
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="/kontakt" class="inline-flex items-center justify-center px-8 py-4 border-2 border-anthrazit-400 text-white font-semibold rounded-xl hover:border-orange-400 hover:text-orange-400 transition-all text-lg">
+          Fragen? Kontaktiere uns
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
