@@ -1,0 +1,211 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Schulformen" description="Alle Schulformen der Wilhelm-Knapp-Schule Weilburg: Fachschule Wirtschaft, Berufliches Gymnasium, Fachoberschule, Berufsfachschule, BZB und Berufsschule.">
+  <HeroSection
+    title='Unsere <span class="text-orange-500">Schulformen</span>'
+    subtitle="Die Wilhelm-Knapp-Schule Weilburg bietet vielfältige Bildungsgänge – von der Berufsvorbereitung bis zum Bachelor Professional."
+    ctaText="Jetzt anmelden"
+    ctaHref="/anmeldung"
+    compact={true}
+  />
+
+  <section class="py-16 sm:py-24 bg-white" aria-labelledby="schulformen-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 id="schulformen-heading" class="sr-only">Alle Schulformen im Überblick</h2>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Fachschule Wirtschaft -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Zweijährige Fachschule Wirtschaft</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Bachelor Professional in Wirtschaft</span>
+                  </div>
+                  <p class="text-anthrazit-500 font-medium mb-3">Fachbereich Betriebswirtschaftslehre</p>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Die zweijährige Fachschule richtet sich an Berufstätige mit abgeschlossener Berufsausbildung und Berufserfahrung. Der erfolgreiche Abschluss verleiht den staatlich anerkannten Abschluss <strong>Bachelor Professional in Wirtschaft</strong> – ein DQR-Level-6-Abschluss, der dem Bachelor gleichgestellt ist.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berufliches Gymnasium -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Berufliches Gymnasium</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Allgemeine Hochschulreife (Abitur)</span>
+                  </div>
+                  <p class="text-anthrazit-500 font-medium mb-3">Wirtschaft und Umwelt</p>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Das Berufliche Gymnasium verbindet allgemeinbildende und berufliche Bildung. In drei Jahren erwerben die Schülerinnen und Schüler die allgemeine Hochschulreife (Abitur) mit beruflichem Schwerpunkt in Wirtschaft und Umwelt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fachoberschule -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Fachoberschule Wirtschaft und Verwaltung</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Fachhochschulreife</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-3 py-1 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Form A – mit Praktikum</span>
+                    <span class="px-3 py-1 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Form B – mit Berufsausbildung</span>
+                  </div>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Die Fachoberschule führt zur Fachhochschulreife. <strong>Form A</strong> richtet sich an Schüler mit mittlerem Abschluss, die ein Praktikum absolvieren. <strong>Form B</strong> richtet sich an Absolventen einer Berufsausbildung und kann in einem Jahr abgeschlossen werden.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berufsfachschule -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Zweijährige Berufsfachschule</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Berufsabschluss + Mittlerer Abschluss</span>
+                  </div>
+                  <div class="flex flex-wrap gap-2 mb-3">
+                    <span class="px-3 py-1 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Wirtschaft und Verwaltung</span>
+                    <span class="px-3 py-1 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Mechatronik</span>
+                    <span class="px-3 py-1 bg-anthrazit-50 text-anthrazit-600 text-sm font-medium rounded-lg">Gesundheit</span>
+                  </div>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Die zweijährige Berufsfachschule ermöglicht gleichzeitig einen beruflichen Abschluss und den mittleren Schulabschluss. Angeboten werden die Bereiche Wirtschaft und Verwaltung, Mechatronik sowie Gesundheit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BZB -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Bildungsgänge zur Berufsvorbereitung (BZB)</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Berufsvorbereitung</span>
+                  </div>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Die Bildungsgänge zur Berufsvorbereitung richten sich an Jugendliche, die noch keinen Ausbildungsplatz gefunden haben oder ihren Hauptschulabschluss verbessern möchten. Sie bereiten gezielt auf eine Berufsausbildung vor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berufsschule -->
+        <div class="bg-white border border-anthrazit-100 rounded-2xl shadow-sm overflow-hidden">
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-2 bg-orange-500 flex-shrink-0"></div>
+            <div class="p-6 sm:p-8 flex-1">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-orange-500/10 text-orange-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 class="text-xl font-bold text-anthrazit-700">Berufsschule – Duales System</h3>
+                    <span class="px-3 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Berufsausbildung</span>
+                  </div>
+                  <p class="text-anthrazit-400 leading-relaxed">
+                    Im dualen System lernen Auszubildende im Betrieb und in der Schule. Die WKS begleitet die schulische Ausbildung und vermittelt fachtheoretisches und allgemeinbildendes Wissen parallel zur praktischen Ausbildung im Unternehmen.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 sm:py-24 bg-anthrazit-700" aria-labelledby="schulformen-cta-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 id="schulformen-cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-6">
+        Fragen zur richtigen Schulform?
+      </h2>
+      <p class="text-anthrazit-200 text-lg max-w-2xl mx-auto mb-10">
+        Wir beraten Sie gerne persönlich. Sprechen Sie uns an oder melden Sie sich direkt an.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/anmeldung" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-500/25 text-lg">
+          Jetzt anmelden
+          <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </a>
+        <a href="/kontakt" class="inline-flex items-center justify-center px-8 py-4 border-2 border-anthrazit-400 text-white font-semibold rounded-xl hover:border-orange-400 hover:text-orange-400 transition-all text-lg">
+          Beratung anfragen
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

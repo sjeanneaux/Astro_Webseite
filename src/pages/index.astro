@@ -8,41 +8,69 @@ import ProjectShowcase from '../components/ProjectShowcase.astro';
 
 <Layout title="Startseite">
   <HeroSection
-    title='Hier entsteht <span class="text-orange-500">Zukunft.</span>'
-    subtitle="Die WKS verbindet solide Industrietechnik mit innovativer Start-up-Energie. Praxisnah, projektorientiert und zukunftssicher."
+    title='Willkommen an der <span class="text-orange-500">Wilhelm-Knapp-Schule.</span>'
+    subtitle="Die WKS Weilburg ist Ihre berufliche Schule für Wirtschaft, Verwaltung, Mechatronik und Gesundheit. Praxisnah, zukunftsorientiert und individuell."
     ctaText="Jetzt anmelden"
     ctaHref="/anmeldung"
-    secondaryCtaText="Fachbereiche entdecken"
-    secondaryCtaHref="#fachbereiche"
+    secondaryCtaText="Schulformen entdecken"
+    secondaryCtaHref="#schulformen"
   />
 
   <StatsSection />
 
-  <section id="fachbereiche" class="py-16 sm:py-24 bg-white" aria-labelledby="fachbereiche-heading">
+  <section id="schulformen" class="py-16 sm:py-24 bg-white" aria-labelledby="schulformen-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 sm:mb-16">
-        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Unsere Fachbereiche</span>
-        <h2 id="fachbereiche-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
-          Praxis statt Theorie
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Unsere Schulformen</span>
+        <h2 id="schulformen-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
+          Der richtige Bildungsweg für Sie
         </h2>
         <p class="text-anthrazit-400 text-lg max-w-2xl mx-auto">
-          An der WKS lernen unsere Schuelerinnen und Schueler mit den Haenden und dem Kopf. Unsere Fachbereiche bieten echte Projekte und moderne Ausstattung.
+          Die Wilhelm-Knapp-Schule bietet vielfältige Bildungsgänge – von der Berufsvorbereitung bis zum Bachelor Professional.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <FachbereichCard
-          title="Metalltechnik"
-          description="Vom CAD-Modell zum fertigen Produkt. In unseren Werkstaetten arbeiten Schueler mit modernster CNC-Technologie und fertigen echte Produkte."
-          href="/metalltechnik"
-          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>'
+          title="Fachschule Wirtschaft"
+          description="Zweijährige Fachschule, Fachbereich Betriebswirtschaftslehre. Abschluss: Bachelor Professional in Wirtschaft."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>'
           color="orange"
         />
         <FachbereichCard
-          title="Wirtschaft"
-          description="Das Gruender-Tagebuch: Unternehmertum und Digitalisierung praktisch erleben. Unsere Schueler gruenden eigene Projekte und lernen fuers Leben."
-          href="/wirtschaft"
-          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>'
+          title="Berufliches Gymnasium"
+          description="Wirtschaft und Umwelt. Allgemeine Hochschulreife verbunden mit beruflicher Bildung."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>'
+          color="orange"
+        />
+        <FachbereichCard
+          title="Fachoberschule"
+          description="Wirtschaft und Verwaltung, Form A und Form B. Führt zur Fachhochschulreife."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>'
+          color="orange"
+        />
+        <FachbereichCard
+          title="Berufsfachschule"
+          description="Zweijährige Berufsfachschule in Wirtschaft und Verwaltung, Mechatronik und Gesundheit."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>'
+          color="orange"
+        />
+        <FachbereichCard
+          title="Berufsvorbereitung (BZB)"
+          description="Bildungsgänge zur Berufsvorbereitung – der erste Schritt in die Berufswelt."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>'
+          color="orange"
+        />
+        <FachbereichCard
+          title="Berufsschule"
+          description="Duales System: Berufsausbildung im Betrieb kombiniert mit schulischem Unterricht an der WKS."
+          href="/schulformen"
+          icon='<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>'
           color="orange"
         />
       </div>
@@ -52,7 +80,7 @@ import ProjectShowcase from '../components/ProjectShowcase.astro';
   <section class="py-16 sm:py-24 bg-anthrazit-50" aria-labelledby="warum-wks-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 sm:mb-16">
-        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Warum WKS?</span>
+        <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-600 text-sm font-semibold rounded-full mb-4">Warum die WKS?</span>
         <h2 id="warum-wks-heading" class="text-3xl sm:text-4xl font-bold text-anthrazit-700 mb-4">
           Was uns auszeichnet
         </h2>
@@ -95,10 +123,10 @@ import ProjectShowcase from '../components/ProjectShowcase.astro';
   <section class="py-16 sm:py-24 bg-anthrazit-700" aria-labelledby="cta-heading">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 id="cta-heading" class="text-3xl sm:text-4xl font-bold text-white mb-6">
-        Bereit fuer deine Zukunft?
+        Ihr Weg beginnt hier.
       </h2>
       <p class="text-anthrazit-200 text-lg max-w-2xl mx-auto mb-10">
-        Informiere dich jetzt ueber unsere Ausbildungsmoeglichkeiten und starte deinen Weg an der WKS. Wir freuen uns auf dich!
+        Informieren Sie sich über unsere Schulformen und melden Sie sich an der Wilhelm-Knapp-Schule Weilburg an. Wir freuen uns auf Sie!
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/anmeldung" class="inline-flex items-center justify-center px-8 py-4 bg-orange-500 text-white font-semibold rounded-xl hover:bg-orange-600 transition-all hover:shadow-lg hover:shadow-orange-500/25 text-lg">
