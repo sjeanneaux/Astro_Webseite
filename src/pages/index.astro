@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Astro + Tailwind">
+  <main class="flex flex-col items-center justify-center min-h-screen p-8">
+    <h1 class="text-4xl font-bold text-blue-600 mb-4">
+      Willkommen bei Astro!
+    </h1>
+    <p class="text-lg text-gray-600 max-w-xl text-center">
+      Dieses Projekt wurde mit <strong>Astro</strong> und <strong>Tailwind CSS</strong> erstellt.
+    </p>
+    <div class="mt-8 flex gap-4">
+      <a
+        href="https://docs.astro.build"
+        class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+      >
+        Astro Docs
+      </a>
+      <a
+        href="https://tailwindcss.com/docs"
+        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+      >
+        Tailwind Docs
+      </a>
+    </div>
+  </main>
+</Layout>
